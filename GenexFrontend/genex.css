@@ -1,0 +1,53 @@
+
+h2{
+    text-align: center;
+}
+body {
+    width: 100%;
+}
+.form{
+    width: 40%;
+    height: 70vh;
+    border: 1px solid green;
+    margin: auto;
+    background-color: white;
+}
+.input-em-pass{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 30px;
+    /* border: 1px solid rebeccapurple; */
+}
+input{
+    height: 25px;
+    /* display: block; */
+}
+.input-name{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    margin-top: 25px;
+}
+.gender{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    column-gap: 30px;
+    margin-top: 25px;
+
+}
+#country-div {
+    margin: auto;
+    margin-top: 25px;
+    width: 80%;
+    
+    
+}
+#country{
+    height: 30px;
+}
