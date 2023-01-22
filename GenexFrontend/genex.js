@@ -22,18 +22,16 @@ document.querySelector("#submit").addEventListener("click",function(){
 })
 
 async function signUp(){
+    // console.log(document.getElementById('email').value)
     let data={
-        firstname:document.getElementById('firstname').value,
-        lastname:document.getElementById('lastname').value,
+        firstName:document.getElementById('firstname').value,
+        lastName:document.getElementById('lastname').value,
         email:document.getElementById('email').value,
         password:document.getElementById('password').value,
-        country:{
-
-            "name":document.getElementById('country').value
-        },
+        country:document.getElementById('country').value,
         gender:document.getElementsByClassName('gender').value
     }
-    
+    // http://localhost:8888/user/login?email=a&password=a
     data=JSON.stringify(data)
         let res=await fetch(`http://localhost:8888/user/register`,{
             method:'POST',
